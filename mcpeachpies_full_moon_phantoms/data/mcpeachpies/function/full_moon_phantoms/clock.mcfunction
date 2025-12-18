@@ -25,6 +25,6 @@ execute if predicate {condition:"minecraft:time_check",value:{min:157000,max:168
 #Waxing Gibbous
 execute if predicate {condition:"minecraft:time_check",value:{min:181000,max:192000},period:192000} run scoreboard players set phase mpp_moon_phase 8
 
-execute if score phase mpp_moon_phase matches 1 run gamerule doInsomnia true
-execute unless score phase mpp_moon_phase matches 1 run gamerule doInsomnia false
+execute if score phase mpp_moon_phase matches 1 run gamerule minecraft:spawn_phantoms true
+execute unless score phase mpp_moon_phase matches 1 run gamerule minecraft:spawn_phantoms false
 schedule function mcpeachpies:full_moon_phantoms/clock 20t
