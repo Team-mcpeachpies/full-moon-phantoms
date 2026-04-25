@@ -1,6 +1,6 @@
 #gamerule doDaylightCycle false
 
-scoreboard objectives add mpp_moon_phase dummy
+scoreboard objectives add mpp_phantoms dummy
 
 scoreboard players set mpp_phantoms_setup mpp_datapacks 1
 
